@@ -1,0 +1,6 @@
+*.stacktrace
+*.exe
+*.o
+zig-out/
+.zig-cache/
+# Zig
