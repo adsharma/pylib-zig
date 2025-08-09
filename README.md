@@ -31,4 +31,4 @@ Or use the provided build script:
 This project uses GitHub Actions for continuous integration. The CI pipeline:
 - Tests building the library
 - Runs all unit tests
-- Tests against multiple Zig versions (0.11.0, 0.12.0, 0.13.0)
+- Tests against recent Zig versions (0.14.x for now)
