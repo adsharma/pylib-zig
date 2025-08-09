@@ -31,10 +31,11 @@ pub fn build(b: *std.Build) void {
     // Now, we will create a static library based on the module we created above.
     // This creates a `std.Build.Step.Compile`, which is the build step responsible
     // for actually invoking the compiler.
-    const lib = b.addLibrary(.{
-        .linkage = .static,
+    const lib = b.addStaticLibrary(.{
         .name = "pylib-zig",
         .root_module = lib_mod,
+        .target = target,
+        .optimize = optimize,
     });
 
     // This declares intent for the library to be installed into the standard
