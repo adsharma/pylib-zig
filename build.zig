@@ -33,7 +33,7 @@ pub fn build(b: *std.Build) void {
     // for actually invoking the compiler.
     const lib = b.addStaticLibrary(.{
         .name = "pylib-zig",
-        .root_module = lib_mod,
+        .root_source_file = b.path("src/root.zig"),
         .target = target,
         .optimize = optimize,
     });
